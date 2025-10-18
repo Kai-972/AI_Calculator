@@ -253,7 +253,7 @@ export default function Home() {
         <Draggable
             bounds="parent"
             position={latexPosition}
-            onDrag={(e, data) => setLatexPosition({ x: data.x, y: data.y })}
+            onDrag={(e, data) => { void e; setLatexPosition({ x: data.x, y: data.y }); }}
             >
             <div
                 className="absolute z-30 text-white"
