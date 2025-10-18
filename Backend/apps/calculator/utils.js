@@ -3,7 +3,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { GEMINI_API_KEY } from '../../constants.js'; // assuming you have the GEMINI_API_KEY in constants.js
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);  // Initialize the API with your key
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
 /**
  * Converts an image buffer to the required format for the generative AI model.
